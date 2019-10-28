@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        {% if birthday %}
+            <h1> Happy Birthday! </h1>
+        {% else %}
+            <h1>Not your Birthday :(</h1>
+        {% endif %}
+        <ul>
+        {% for name in names %}
+            <li>{{name}}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
